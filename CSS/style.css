@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: rgb(201, 189, 227);
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: rgb(104, 214, 210);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    height: 80vh;
+    margin: 2rem;
+    width: 30rem;
+    padding-block: 2rem;
+    border-radius: 20px;
+    box-shadow: 50px 20px 10px 3px rgb(67, 81, 107), 53px 24px 10px 3px rgb(157, 191, 255);
+    border-right: 5px solid salmon;
+    border-bottom: 5px solid salmon;
+    
+}
+
+input,
+select {
+    height: 17px;
+    width: 10rem;
+}
+
+.Gender{width: 40px;}
