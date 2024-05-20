@@ -7,31 +7,60 @@
 }
 
 body {
-    background-color: rgb(201, 189, 227);
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    color: silver;
+    background-color: rgb(19, 19, 19);
+}
+
+h3 {
+    text-decoration: underline;
 }
 
 form {
-    background-color: rgb(104, 214, 210);
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    height: 80vh;
-    margin: 2rem;
+    text-align: center;
     width: 30rem;
-    padding-block: 2rem;
+    height: fit-content;
+    padding: 1.3rem;
+    /* border:  5px outset rgb(0, 0, 0); */
+    background-color: rgb(19, 19, 19);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
     border-radius: 20px;
-    box-shadow: 50px 20px 10px 3px rgb(67, 81, 107), 53px 24px 10px 3px rgb(157, 191, 255);
-    border-right: 5px solid salmon;
-    border-bottom: 5px solid salmon;
-    
 }
 
-input,
+
+
+.pDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pSubjects>* {
+    margin-block: 0.8rem;
+
+    &>* {
+        margin-block: 0.8rem;
+    }
+}
+
+
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="submit"],
 select {
-    height: 17px;
-    width: 10rem;
+    width: 8rem;
+    margin-block: 0.2rem;
 }
 
-.Gender{width: 40px;}
+input[type="checkbox"],
+input[type="radio"] {
+    margin-inline: 0.3rem;
+}
+
